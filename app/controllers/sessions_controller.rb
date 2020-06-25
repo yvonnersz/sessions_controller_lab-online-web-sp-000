@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     session[:name] = params[:name]
     if session[:name]
       redirect_to '/'
+    end
   end
 
   def destroy
