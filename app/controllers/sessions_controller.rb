@@ -4,6 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     session[:name] = params[:username]
+    redirect_to '/'
   end
 
   def destroy
