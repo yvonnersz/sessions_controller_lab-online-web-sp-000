@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
     elsif session[:name]
       redirect_to '/'
     end
-
   end
 
   def destroy
