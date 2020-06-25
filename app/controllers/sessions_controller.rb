@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
     session[:name] = params[:name]
-    if params[:name].empty?
+    if params[:name].empty? || params[:name] == nil
       redirect_to login_path
     else
       redirect_to '/'
